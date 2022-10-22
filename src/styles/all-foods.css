@@ -1,0 +1,39 @@
+@font-face {
+  font-family: parastoo;
+  src: url(../fonts/Farsi-Digits/Parastoo-Bold-FD.eot);
+  src: url(../fonts/Farsi-Digits/Parastoo-Bold-FD.woff2);
+  src: url(../fonts/Farsi-Digits/Parastoo-FD.woff);
+ 
+}
+html {
+  font-family:parastoo;
+}
+.search__widget,
+.sorting__widget select {
+  padding: 7px 15px;
+  border: 1px solid #fde4e4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search__widget input {
+  border: none;
+}
+
+.search__widget input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .search__widget {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .search__widget input {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .sorting__widget select {
+    width: 100% !important;
+    font-size: 0.8rem;
+  }
+}
